@@ -1,0 +1,257 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	color: black;
+	font-family: "幼圆";
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+}
+.flexContainer{
+	display: flex;
+	flex-direction: row;
+}
+#resumeContainer{
+	width: 80%;
+	margin: 1rem auto;
+	background-color: #fff;
+}
+#resumeContainer>header{
+	padding: 1rem 1rem 0rem 1rem;
+	background-color: skyblue;
+}
+#resumeContainer>header>*{
+	margin-bottom: 1rem;
+}
+.targetJob{
+	color: #fff;
+}
+.personalInfo{
+	justify-content: flex-start;
+	align-items: center;
+}
+.myPhoto{
+	width: 9rem;
+}
+.myPhoto>img{
+	width: 100%;
+	height: 8rem;
+	border-radius: 50%;
+}
+.textInfo{
+	margin-left: 2rem;
+}
+.nav_resumeInfo{
+	justify-content: space-between;
+	height: 2rem;
+	align-items: center;
+}
+.nav_resumeInfo>a{
+	padding: 1rem;
+	border-radius: 0.2rem;
+}
+.unactive_navItem{
+	background-color: #fff;
+	color: black;
+	border:skyblue solid 1px;
+}
+.active_navItem{
+	background-color: skyblue;
+	color: #fff;
+	font-weight: bold;
+	border: #fff solid 1px;
+	border-bottom: none;
+}
+/* ============
+   样式-主体内容
+   ============*/
+main{
+	padding: 0 1rem;
+}
+.mainInfo{
+	width: 100%;
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
+/* ==样式-学习经历== */
+.commonStyle{
+	padding: 1rem 0;
+	width:100%;
+}
+.title_learningExp{
+	justify-content: space-between;
+	font-size: 1.4rem;
+}
+.title_learningExp>div{
+	height: 2rem;
+}
+.content_learningExp>p{
+	height: 2rem;
+	line-height: 2rem;
+}
+/* ==样式-常见布局== */
+/* 通用样式 */
+.header_layoutPart{
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+.p_layoutPart{
+	margin: 0.5rem 0;
+}
+.context_layoutPart{
+	width: 100%;
+	border: #EEEEEE solid 1px;
+	text-align: center;
+	padding: 1rem 0;
+}
+/* 1.流式布局 */
+.fliud_layoutType>.demo_fliudLayout>.title_demo{
+	width: 90%;
+	height: 2rem;
+	background-color: #EEEEEE;
+	margin: 1rem auto;
+}
+.fliud_layoutType>.demo_fliudLayout>.cols_demo{
+	width: 90%;
+	margin: 0 auto;
+}
+.fliud_layoutType>.demo_fliudLayout .col1_demo{
+	width: 50%;
+	height: 4rem;
+	background-color: #EEEEEE;
+	margin-right: 5%;
+	float: left;
+}
+.fliud_layoutType>.demo_fliudLayout .col2_demo{
+	width: 20%;
+	height: 4rem;
+	background-color: #EEEEEE;
+	margin-right: 5%;
+	float: left;
+}
+.fliud_layoutType>.demo_fliudLayout .col3_demo{
+	width: 20%;
+	height: 4rem;
+	background-color: #EEEEEE;
+	float: left;
+}
+/* 2.固定布局 */
+.fixed_layoutType>.demo_fixedLayout>.title_demo{
+	width: 900px;
+	height: 2rem;
+	background-color: #EEEEEE;
+	margin: 1rem auto;
+}
+.fixed_layoutType>.demo_fixedLayout>.cols_demo{
+	width: 900px;
+	margin: 0 auto;
+}
+.fixed_layoutType>.demo_fixedLayout .col1_demo{
+	width: 500px;
+	height: 4rem;
+	background-color: #EEEEEE;
+	margin-right: 50px;
+	float: left;
+}
+.fixed_layoutType>.demo_fixedLayout .col2_demo{
+	width: 150px;
+	height: 4rem;
+	background-color: #EEEEEE;
+	margin-right: 50px;
+	float: left;
+}
+.fixed_layoutType>.demo_fixedLayout .col3_demo{
+	width: 150px;
+	height: 4rem;
+	background-color: #EEEEEE;
+	float: left;
+}
+/* 3.Flex布局 */
+.flex_layoutType>.demo_flexLayout{
+	display: flex;
+	width: 56rem;
+	margin: 1rem auto;
+}
+.flex_layoutType>.demo_flexLayout>div{
+	width: 8rem;
+	background-color: #EEEEEE;
+}
+/* 4.媒体查询布局 */
+.mediaQuery_layoutType>video{
+	width: 56rem;
+	margin: 1rem 5rem;
+	border: #EEEEEE solid 1px;
+}
+/* ==样式-我的JS认知== */
+#jsInMyView .sectionTitle{
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+#jsInMyView .sectionContent{
+	margin: 0.5rem 0;
+}
+/* ==样式-python基础== */
+.whatILearnt, .aDemoVideo{
+	width: 50%;
+	padding: 1rem 0;
+	float: left;
+}
+.whatILearnt>header,.aDemoVideo>header{
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+.whatILearnt>p{
+	margin: 0.5rem 0;
+}
+.aDemoVideo>video{
+	width: 100%;
+	height: 30rem;
+}
+/* ==样式-用过webpack== */
+#webpackIUsed>header{
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+#webpackIUsed>p{
+	margin: 0.5rem 0;
+}
+/* ==样式-项目经历== */
+.project1>header,.project2>header{
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+.project1>p,.project2>p{
+	margin: 0.5rem 0;
+}
+.title_project1,.title_project2{
+	justify-content: space-between;
+}
+/* ==样式-自我介绍== */
+.technology,.ethic,.wordsForJob{
+	float: left;
+	width: 50%;
+}
+.wordsForJob{
+	width: 100%;
+}
+.wordsForJob>header{
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+.wordsForJob>p{
+	margin: 0.5rem 0;
+}

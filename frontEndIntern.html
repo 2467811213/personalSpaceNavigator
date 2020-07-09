@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>校招生【2020届】-卢伟-156-7518-7205</title>
+		<meta name="Description" content="一份来自" />
+		<script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<!-- 引入 ECharts 文件 -->
+		<script type="text/javascript" src="js/echarts.min.js"></script>
+		<script type="text/javascript" src="js/frontEndIntern.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/frontEndIntern.css" />
+	</head>
+	<body>
+		<div id="resumeContainer">
+			<header>
+				<h1 class="targetJob">求职意向：web前端开发</h1>
+				<div class="personalInfo flexContainer">
+					<div class="myPhoto">
+						<img src="./img/myPhoto.jpg" />
+					</div>
+					<div class="textInfo">
+						<p><b>姓名：</b>&nbsp;卢伟</p>
+						<p><b>年龄：</b>&nbsp;23</p>
+						<p><b>经验水平：</b>&nbsp;2020届-校招生</p>
+						<p><b>当前位置：</b>&nbsp;湖南-长沙</p>
+						<p><b>专业学历:</b>&nbsp;文化产业管理 本科</p>
+						<p><b>电子邮箱:</b>&nbsp;2467811213@qq.com</p>
+					</div>
+				</div>
+				<nav class="nav_resumeInfo flexContainer">
+					<a class="active_navItem" href="###">学习经历</a>
+					<a class="unactive_navItem" href="###">常见网页布局实现</a>
+					<a class="unactive_navItem" href="###">我的JS认知</a>
+					<a class="unactive_navItem" href="###">Python基础</a>
+					<a class="unactive_navItem" href="###">用过Webpack</a>
+					<a class="unactive_navItem" href="###">项目经历</a>
+					<a class="unactive_navItem" href="###">自我介绍</a>
+				</nav>
+			</header>
+			<main>
+				<div class="mainInfo">
+					<!-- 学习经历 -->
+					<article id="learningExp" class="commonStyle show">
+						<header class="flexContainer title_learningExp">
+							<div><b>2017.03--2017.12</b></div>
+							<div><b>湖南启能职业技术培训学校</b></div>
+							<div><b>web前端开发和UI设计</b></div>
+						</header>
+						<section class="content_learningExp">
+							<p><b>主要课程：</b>&nbsp;HTML 、 CSS 、JavaScript 、jQuery 、bootstrap 、SVN 、PHP 、MySQL</p>
+							<p><b>考核项目：</b>&nbsp;<a title="click here to scan the demo" href="https://2467811213.github.io/GJRZshop/webMainPanel.html"
+								 target="_blank">手机端webB2C电商应用--广角商城</a></p>
+							<p><b>我的任务：</b>&nbsp;作为开发组一员，负责主页、个人中心前端页面的代码实现</p>
+							<p><b>使用技术栈：</b>&nbsp;html 、css、 javascript、 bootstrap、 jquery 、font awesome</p>
+						</section>
+					</article>
+					<!-- 常见网页布局 -->
+					<article id="layoutSeenOften" class="commonStyle hide">
+						<!-- 1.流式布局 -->
+						<section class="fliud_layoutType">
+							<header class="header_layoutPart">流式布局</header>
+							<p class="p_layoutPart">以百分比作为网页元素的单位进行布局，不需要考虑设备尺寸或者屏幕宽度大小了，可以为每种情形找到一种可行的方案</p>
+							<div class="demo_fliudLayout context_layoutPart">
+								<div class="title_demo">90%</div>
+								<div class="cols_demo">
+									<div class="col1_demo">50%</div>
+									<div class="col2_demo">20%</div>
+									<div class="col3_demo">20%</div>
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+						</section>
+						<!-- 2.固定布局 -->
+						<section class="fixed_layoutType">
+							<header class="header_layoutPart">固定布局</header>
+							<p class="p_layoutPart">以像素值作为网页元素的单位进行布局，一般适用于单一设备端固定屏幕宽度的网站应用开发，当然结合媒体查询也可以做到多端响应</p>
+							<div class="demo_fixedLayout context_layoutPart">
+								<div class="title_demo">900px</div>
+								<div class="cols_demo">
+									<div class="col1_demo">500px</div>
+									<div class="col2_demo">150px</div>
+									<div class="col3_demo">150px</div>
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+						</section>
+						<!-- 3.Flex布局 -->
+						<section class="flex_layoutType">
+							<header class="header_layoutPart">Flex布局</header>
+							<p class="p_layoutPart">在我的认知中，Flex布局可以实现网页布局多端的稳定呈现（有响应式的特征）。
+								应用方面，首先的构建一个容器，然后决定主轴方向，然后决定铺排对齐方式。
+							</p>
+							<p id="controler_flexLayout">
+								<span><b>flex-direction铺排方向：</b></span>
+								<select name="flex_direction">
+									<option value="row">row横向向右</option>
+									<option value="row-reverse">row-reverse横向向左</option>
+									<option value="column">column纵向向下</option>
+									<option value="column-reverse">column-reverse纵向向上</option>
+								</select>
+								<span><b>justify-content主轴对齐：</b></span>
+								<select name="justify_content">
+									<option value="flex-start">flex-start首端对齐</option>
+									<option value="flex-end">flex-end末端对齐</option>
+									<option value="center">center居中对齐</option>
+									<option value="space-evenly">space-evenly均匀分布</option>
+									<option value="space-between">space-between两端对齐</option>
+									<option value="space-around">space-around周边等距</option>
+								</select>
+								<br />
+								<span><b>flex-wrap换行：</b></span>
+								<select name="flex_wrap">
+									<option value="nowrap">nowrap不换行</option>
+									<option value="wrap">wrap换行</option>
+									<option value="wrap-reverse">wrap-reverse反向换行</option>
+								</select>
+								<span><b>align-items交叉轴对齐：</b></span>
+								<select name="align_items">
+									<option value="stretch">stretch拉伸填满</option>
+									<option value="flex-start">flex-start首段对齐</option>
+									<option value="flex-end">flex-end末端对齐</option>
+									<option value="center">center居中对齐</option>
+									<option value="baseline">baseline基线对齐</option>
+								</select>
+								<br />
+								<span><b>align-content多轴对齐：</b></span>
+								<select name="align_content">
+									<option value="stretch">stretch拉伸填满</option>
+									<option value="flex-start">flex-start起点对齐</option>
+									<option value="flex-end">flex-end终点对齐</option>
+									<option value="center">center居中对齐</option>
+									<option value="space-between">space-between两端对齐</option>
+									<option value="space-around">space-around周边等距</option>
+								</select>
+							</p>
+							<div style="padding: 0;height: 20rem;" class="demo_flexLayout context_layoutPart">
+								<div class="item1_demo"><br />box1</div>
+								<div class="item2_demo"><br />box2</div>
+								<div class="item3_demo"><br />box3</div>
+								<div class="item4_demo"><br />box4</div>
+								<div class="hide item5_demo"><br />box5</div>
+								<div class="hide item6_demo"><br />box6</div>
+								<div class="hide item7_demo"><br />box7</div>
+								<div class="hide item8_demo"><br />box8</div>
+							</div>
+							<p>tips：该部分之列举了我平时用过和用的比较多的属性</p>
+						</section>
+						<!-- 4.媒体查询 -->
+						<section class="mediaQuery_layoutType">
+							<header class="header_layoutPart">媒体查询布局</header>
+							<p class="p_layoutPart">原理：通过检测各种网页浏览终端媒体的屏幕宽度，应用预设好的布局样式，做到多终端的响应式布局。这一部分我打算链接到一个新的网页展示。</p>
+							<p><a href="mediaQuery_demo.html"><b>click here to scan the demo</b></a></p>
+							<video src="video/mediaQuery_demo.mp4" autoplay="autoplay" controls="controls" loop="loop"></video>
+						</section>
+					</article>
+					<!-- 我的JS认知 -->
+					<article id="jsInMyView" class="commonStyle hide">
+						<header class="sectionTitle">JS简述</header>
+						<p class="sectionContent">JS是JavaScript是的简称，是一种服务于浏览器界面交换的脚本语言，由Brendan Eich所发明。</p>
+						<p class="sectionContent">如果把网页开发比作制作一个动画角色的话，html是人物模型建造师，css是人物美工，而js扮演则
+							是动画师</p>
+						<p class="sectionContent">网站最初的功能只是专家学者为了交流方便，搭建一个文档交流终端，只有图文呈现，后面人们因为有
+							排版需要，便出现了css。随着工作开展，一种可以服务于浏览器端可供人机交互的脚本语言需求越来越突
+							出，JS便因此应运而生</p>
+						<section class="knowledgeStructure">
+							<header class="sectionTitle">JS体系化认知</header>
+							<p class="sectionContent" style="text-align: center;"><img src="img/knowledgeStructure_JS.png"></p>
+						</section>
+					</article>
+					<!-- Python基础 -->
+					<article id="pythonIlearnt" class="commonStyle hide">
+						<section class="whatILearnt">
+							<header>我学会了什么？</header>
+							<p><b>import 导入模块包：</b>import moudleName</p>
+							<p><b>数据类型：</b>
+								<br />1.整型int（如100）；
+								<br />2.浮点型float（如3.14）;
+								<br />3.字符串型string(python中单引号，双引号和三引号均可表示字符串，三引号打印时保持编辑器代码格式呈现)
+							</p>
+							<p><b>数据结构：</b>
+								<br />1.字典{key:value}相当于jsJSON对象
+								<br />2.元组(item1,item2,...,itemN)相当于一个不能修改的js数组
+								<br />3.列表[item1,item2,...,itemN]相当于js数组
+								<br />4.集合{item1,item2,...,itemN}相当于一个无序不重复的js数组
+							</p>
+							<p><b>函数和流程控制：</b>
+								<br />1.函数声明 def
+								<br />2.条件控制 if else单一条件判断；if elif ... else多条件判断 （...表示可以有多个elif）
+								<br />3.循环控制 while循环 ;for in 循环
+							</p>
+							<p><b>用过的模块：</b>
+								<br />1.pandas模块 用于做数据分析，有一个独特的数据结构数据框，并用pandas创建和导出过csv和xls文件
+								<br />2.pyaudio模块 用于语音识别，用此第三方包实现了实时语音转写考试（详见右）
+								<br />3.turtle模块 绘画模块，用该模块实现过分型树绘制
+								<br />4.requests模块 发起网络请求，用该模块实现过天气数据爬取
+								<br />5.hashlib,hmac,base64,websocket,time 使用这些模块生成过数字签名
+							</p>
+						</section>
+						<section class="aDemoVideo">
+							<header>demo：实时语音转写</header>
+							<video src="video/Real-time%20voice%20transliteration.mp4" controls="controls"></video>
+						</section>
+						<div style="clear: both;"></div>
+					</article>
+					<!-- 用过webpack -->
+					<article id="webpackIUsed" class="commonStyle hide">
+						<header>我认识和学到webpack</header>
+						<p>webpack是一个运行在服务端的js打包工具，我只学了点皮毛，在安装完成后，只用来打包合并过js文件
+							没有项目实战经验，了解基本命令，如npx run xxx.
+						</p>
+					</article>
+					<!-- 项目经历 -->
+					<article id="projectIdid" class="commonStyle hide">
+						<section class="project1">
+							<header>
+								<p class="flexContainer title_project1">
+									<span>2017.10-2017.12 </span>
+									<span>B2C电商平台——广角商城</span>
+									<span>前端开发成员</span>
+								</p>
+							</header>
+							<p><b>Situation：</b>由湖南广角锐志教育培训公司发起的 web 前端培训课程结业实战项目</p>
+							<p><b>Task：</b>作为开发组成员，完成商城主页的前端界面开发</p>
+							<p><b>Action：</b>由于前期团队缺少沟通，导致变量、样式命名冲突，字体和颜色使用各有不同，组
+								织停留下来，制定了统一样式规范，并指派了专员负责公共模块的开发
+							</p>
+							<p><b>Results：</b>团队沟通和分工比较重要，拿到一个项目要先分析页面构成，可以分离公共组件、
+								变量和样式，进行分工，定制公共规范，创建公共组件库，统一标准，提高效率
+							</p>
+							<p><b>technologyStack：</b>html;css;javascript;jQuery;bootstrap;SVN</p>
+							<p><a href="https://2467811213.github.io/GJRZshop/webMainPanel.html" target="_blank"><b>click here to view the
+										demo</b></a></p>
+						</section>
+						<hr />
+						<section class="project2">
+							<section class="project2">
+								<header>
+									<p class="flexContainer title_project2">
+										<span>2017.10-2018.3 </span>
+										<span>网页版清博指数计算工具</span>
+										<span>独立开发者</span>
+									</p>
+								</header>
+								<p><b>Situation：</b>该工具为校园自媒体工作室工作期间开发。在职期间，工作室采用两个 Excel
+									工作表反复切换计算统计湖南各大高校自媒体的清博指数并排名，以此来了解湖南各大校园自媒体的影响力；
+								</p>
+								<p><b>Task：</b>统计计算 9 月 9 日到 18 日的湖南各大高校自媒体清博指数并排名；问题，首次花了2
+									个多小时才完成 9 天的统计任务，并且深感翻阅、录入统计、计算步骤重复，需要不停地在手机、键盘，鼠标
+									间切换，太费时；
+								</p>
+								<p><b>Action：</b>使用 web 前端技术实现了一个翻阅录入计算，一键统计排名的 web 工具；</p>
+								<p><b>Results：</b>12 天的清博指数计算只花了半个小时</p>
+								<p><b>technologyStack：</b>html;css;javascript;jQuery;localStorage</p>
+								<p><a href="https://2467811213.github.io/officialAccountIndexCalculator/index.html" target="_blank"><b>click
+											here to view the demo</b></a></p>
+							</section>
+					</article>
+					<!-- 自我介绍 -->
+					<article id="selfIntroduction" class="commonStyle hide">
+						<section class="technology">
+							<div id="myTechnology" style="width: 600px;height:400px;"></div>
+						</section>
+						<section class="ethic">
+							<div id="myEthic" style="width: 600px;height:400px;"></div>
+						</section>
+						<section class="wordsForJob">
+							<header class="">求职自荐信</header>
+							<p>您好！我是一名普通高校的学生，我一直很想学前端，自己的专业只教皮毛，
+								虽然在外参与过系统培训，加之看视频学习，已初具前端基础开发知识和能力，
+								但一直缺乏前沿一线的“作战”经历，也没有很专业的有丰富经验导师指导，自己
+								的成长和学习遇到瓶颈，成长很慢，很想要接触下一线战场，跟大咖前辈们交流
+								请教一二，突破现下的瓶颈，找到一条自己学习成长的技术之路。<br />
+								我不是计算机专业，也没有修完计算专业课程，但是自己有认真研读过相关书籍，
+								了解计算机相关的基本知识。比如《网络是怎样连接的？》这本书，帮我认识了网
+								络世界的大致面貌。<br />
+								同时，我也自行研究学习了 微信小程序 ，除后台云开发开发有些吃力，前端实现
+								基本上OK,少有问题，掌握了独立开发和上线的全流程；学习过python，会用基本
+								语法和库，做过简单的数据爬虫，爬取城市空气质量指数。<br />
+								文化产业管理专业，因为经常要做市场调查，用户分析，策划和简单的设计，也使我
+								具有一定的产品意识和策划、设计能力。<br />
+								还有，自己不怕吃苦，执着肯干，诚挚地想来一线战场，历练一番<br />
+								如能有此机会，伟倍感荣幸，定当全力以赴，不负公司简拔擢拾之情。</p>
+						</section>
+						<div style="clear: both;"></div>
+					</article>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

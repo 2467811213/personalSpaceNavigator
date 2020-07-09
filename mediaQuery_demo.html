@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>媒体查询示例</title>
+		<style type="text/css">
+			#demoBox {
+				width: 50%;
+				height: 20rem;
+				background-color: black;
+				color: white;
+			}
+			#lt768 {display: none;}
+			#lt992 {display: none;}
+			#lt1200 {display: none;}
+			#gt1200 {display: block;}
+
+			@media only screen and (min-width:992px) and (max-width:1200px) {
+				#lt768 {display: none;}
+				#lt992 {display: none;}
+				#lt1200 {display: block;}
+				#gt1200 {display: none;}
+				#demoBox {background-color: blue;}
+			}
+			@media only screen and (min-width:768px) and (max-width:992px) {
+				#lt768 {display: none;}
+				#lt992 {display: block;}
+				#lt1200 {display: none;}
+				#gt1200 {display: none;}
+				#demoBox {background-color: yellow;}
+			}
+			@media only screen and (min-width:0px) and (max-width:768px){
+				#lt768 {display: block;}
+				#lt992 {display: none;}
+				#lt1200 {display: none;}
+				#gt1200 {display: none;}
+				#demoBox {background-color: red;}
+			}
+		</style>
+	</head>
+	<body>
+		<p id='lt768'>screenWidth&lt;768px（如手机）</p>
+		<p id='lt992'>screenWidth&lt;992px（如平板）</p>
+		<p id='lt1200'>screenWidth&lt;1200px（如桌面显示器-中屏）</p>
+		<p id='gt1200'>screenWidth&lt;1200px（如桌面显示器-大屏）</p>
+		<div id="demoBox">
+			演示盒
+		</div>
+	</body>
+</html>
